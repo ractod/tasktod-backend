@@ -32,7 +32,7 @@ mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 
 //? Router middleware :
-const origin = "http://localhost:3000"
+const origin = process.env.NODE_ENV == "development" ? "http://localhost:3000" : process.env.ORIGIN
 
 app.use(cors({ credentials: true, origin }));
 
