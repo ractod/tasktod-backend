@@ -31,3 +31,8 @@ async function seed() {
 }
 
 seed();
+
+// MONGO_URI=mongodb+srv://rkplus:RKrezaplusRK15@cluster0.ol7lryr.mongodb.net/?retryWrites=true&w=majority
+// PORT=5000
+// NODE_ENV=development
+// COOKIE_PARSER_SECRET=cookieSecret
