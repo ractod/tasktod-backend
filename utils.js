@@ -84,7 +84,7 @@ export function setCookie(user, res) {
     signed: true, // Indicates if the cookie should be signed
     sameSite: "Lax",
     secure: process.env.NODE_ENV === "development" ? false : true,
-    domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.ORIGIN,
+    domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.DOMAIN,
   };
   // res.setHeader("Set-Cookie", cookie.serialize("userToken", generateToken(user), cookieOptions));
   res.cookie("userToken", generateToken(user), cookieOptions); //
