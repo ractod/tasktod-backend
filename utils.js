@@ -84,7 +84,6 @@ export function setCookie(user, res) {
     signed: true, // Indicates if the cookie should be signed
     sameSite: "none",
     secure: 'auto',
-    domain: "tasktod.vercel.app" ,
   };
   // res.setHeader("Set-Cookie", cookie.serialize("userToken", generateToken(user), cookieOptions));
   res.cookie("userToken", generateToken(user), cookieOptions); //
