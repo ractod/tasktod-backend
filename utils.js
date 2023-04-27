@@ -82,8 +82,8 @@ export function setCookie(user, res) {
     maxAge: 1000 * 60 * 60 * 24 * 7, // would expire after 7 days
     httpOnly: true, // The cookie only accessible by the web server
     signed: true, // Indicates if the cookie should be signed
-    sameSite: "Lax",
-    secure: true,
+    sameSite: "none",
+    secure: 'auto',
     domain: "tasktod.vercel.app" ,
   };
   // res.setHeader("Set-Cookie", cookie.serialize("userToken", generateToken(user), cookieOptions));
